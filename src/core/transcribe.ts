@@ -12,6 +12,7 @@ export default class Transcribe {
   parsedLines : Array<Line> = [];
 
   constructor(originalJson : string){
+    console.log(originalJson)
     this.parsedJson = JSON.parse(originalJson);
     this.parse();
   }
