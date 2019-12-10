@@ -9,7 +9,7 @@ import TextareaAutosize from 'react-textarea-autosize';
 const App = ()=> {
 
   const [text, setText] = useState<string>("");
-  const [template, setTemplateText] = useState<string>(`## {{ speaker }}: \n"{{ line }}"  \n{{ time}}sec  \n\n`);
+  const [template, setTemplateText] = useState<string>(`## {{ speaker }}: \n"{{ text }}"  \n{{ time }}sec  \n\n`);
   const [ts, setTs] = useState<any>(null);
   //let ts : Transcribe|null= null;
 

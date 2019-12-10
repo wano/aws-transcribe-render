@@ -5,7 +5,7 @@ const Mustache = require("mustache");
 export default class Transcribe {
 
   parsedJson : TranscribeResult;
-  lineTemplate : string = `## {{ time }} {{ speaker }}:  \n {{ line }}  \n\n`;
+  lineTemplate : string = `## {{ time }} {{ speaker }}:  \n {{ text }}  \n\n`;
 
   speakers  : {[key:string] : string} = {};
 
@@ -51,7 +51,7 @@ export default class Transcribe {
           this.speakers[speaker] = speaker;
           lines.push({
             speaker : speaker,
-            line : line,
+            text : line,
             time : time
           })
         }
@@ -66,7 +66,7 @@ export default class Transcribe {
 
     lines.push({
       speaker : speaker,
-      line : line,
+      text : line,
       time : time
     });
 
@@ -100,5 +100,5 @@ export default class Transcribe {
 interface Line {
   speaker : string,
   time : string,
-  line : string,
+  text : string,
 }
