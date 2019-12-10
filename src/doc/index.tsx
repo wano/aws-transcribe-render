@@ -61,7 +61,7 @@ const App = ()=> {
           <label >Template of Render Paragraph </label>
         </div>
         <div className={"row"}>
-          <textarea defaultValue={template}  onChange={e => setTemplateText(e.target.value)}/>
+          <textarea defaultValue={template}  onChange={e => setTemplateText(e.target.value)} rows={6} />
         </div>
         <SpeakerOverride transcribe={ts} />
         <div className="row">
