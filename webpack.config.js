@@ -22,7 +22,7 @@ module.exports = {
   },
   output: {
     filename: 'demo.js',        // 仕上がりファイルの置き場
-    path: path.resolve(__dirname, 'doc')   // 出力ディレクトリの指定の絶対パス
+    path: path.resolve(__dirname, 'docs')   // 出力ディレクトリの指定の絶対パス
   },
   plugins: [
   ]
